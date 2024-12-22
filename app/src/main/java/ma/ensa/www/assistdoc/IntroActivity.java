@@ -49,7 +49,7 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(),AskRole.class );
+            Intent mainActivity = new Intent(getApplicationContext(), AskRole.class );
             startActivity(mainActivity);
             finish();
 

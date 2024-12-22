@@ -4,156 +4,157 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawer_layout">
+    android:id="@+id/drawer_layout"
+    android:background="#F0F8FF">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="#EAEAEA">
+        android:padding="16dp">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp">
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
 
-            <TextView
-                android:id="@+id/textAddMedication"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ajouter un Médicament"
-                android:textColor="#333333"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageHello"
-                android:layout_width="55dp"
-                android:layout_height="37dp"
-                android:layout_marginStart="8dp"
-                android:contentDescription="Icône ajouter"
-                android:src="@drawable/telec" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <!-- Champ de saisie pour le nom du médicament -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:text="Nom du médicament:"
-                android:textColor="#333333"
-                android:textStyle="bold"
-                android:textSize="16sp" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutNom"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editNom"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="12dp"
-                    android:background="@color/purple_200"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp">
 
-                    android:hint="Nom du médicament"
-                    android:contentDescription="Champ pour le nom du médicament" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/textAddMedication"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ajouter un Médicament"
+                        android:textColor="@color/purple_700"                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
-            <!-- Champ de saisie pour le dosage -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dosage:"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="#333333"
-                android:layout_marginBottom="4dp"/>
+                    <ImageView
+                        android:id="@+id/imageHello"
+                        android:layout_width="55dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Icône ajouter"
+                        android:src="@drawable/telec" />
+                </LinearLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutDosage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editDosage"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/purple_200"
+                    android:orientation="vertical">
 
-                    android:hint="dosage du médicament"
-                    android:padding="12dp"
-                    android:contentDescription="Champ pour le dosage du médicament" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Nom du médicament:"
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
 
-            <!-- Champ de saisie pour la fréquence -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fréquence:"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#333333"
-                android:layout_marginBottom="4dp"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutNom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutFrequence"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editNom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:hint="Nom du médicament"
+                            android:contentDescription="Champ pour le nom du médicament" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editFrequence"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/purple_200"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dosage:"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_marginBottom="4dp" />
 
-                    android:padding="12dp"
-                    android:hint="fréquence du médicament"
-                    android:contentDescription="Champ pour la fréquence de prise du médicament" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutDosage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <!-- Champ de saisie pour l'heure de prise -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Heure de Prise (HH:MM):"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#333333"
-                android:layout_marginBottom="4dp"/>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editDosage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:hint="Dosage du médicament"
+                            android:textColor="@color/purple_700"
+                            android:contentDescription="Champ pour le dosage du médicament" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutHeure"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fréquence:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_700"
+                        android:layout_marginBottom="4dp" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editHeurePris"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="12dp"
-                    android:background="@color/purple_200"
-                    android:hint="HH:MM"
-                    android:contentDescription="Champ pour l'heure de prise du médicament" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutFrequence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-        </LinearLayout>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editFrequence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:hint="Fréquence du médicament"
+                            android:textColor="@color/purple_700"
+                            android:contentDescription="Champ pour la fréquence de prise du médicament" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heure de Prise (HH:MM):"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_700"
+                        android:layout_marginBottom="4dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutHeure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editHeurePris"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:hint="HH:MM"
+                            android:textColor="@color/purple_700"
+                            android:contentDescription="Champ pour l'heure de prise du médicament" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -165,17 +166,18 @@
             <Button
                 android:id="@+id/buttonAdd"
                 android:text="Ajouter Médicament"
-                android:layout_width="180dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_200"
+                android:backgroundTint="#1E90FF"
+                android:textColor="#FFFFFF"
                 android:layout_marginBottom="16dp" />
 
             <Button
                 android:id="@+id/buttonViewMeds"
                 android:text="Voir Médicaments"
-                android:layout_width="180dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorAccent"
+                android:backgroundTint="#8C00A8"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 

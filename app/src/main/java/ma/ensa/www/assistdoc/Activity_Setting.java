@@ -30,6 +30,7 @@ import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 import ma.ensa.www.assistdoc.model.Users;
+import ma.ensa.www.assistdoc.patient.MainActivityPatient;
 
 public class Activity_Setting extends AppCompatActivity {
     ImageView setprofile;

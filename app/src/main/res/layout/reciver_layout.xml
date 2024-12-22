@@ -13,7 +13,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:src="@drawable/ic_camera" />
+        android:src="@drawable/ic_person1" />
 
     <TextView
         android:id="@+id/recivertextset"

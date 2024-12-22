@@ -20,6 +20,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import ma.ensa.www.assistdoc.patient.MainActivityPatient;
+
 public class Activity_SignIn extends AppCompatActivity {
     TextView logsignup;
     Button button;

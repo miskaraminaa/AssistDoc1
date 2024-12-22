@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".chatwindo">
+
+    <ImageView
+        android:id="@+id/imageVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_halo" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,11 +20,12 @@
         android:id="@+id/ll1"
         android:gravity="center">
 
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profileimgg"
             android:layout_width="@dimen/_80sdp"
             android:layout_height="@dimen/_80sdp"
-            android:src="@drawable/ic_camera"
+            android:src="@drawable/patient"
             app:civ_border_color="@color/white"
             android:layout_marginTop="@dimen/_7sdp"
             app:civ_border_width="@dimen/_2sdp"
@@ -43,8 +52,8 @@
         android:layout_height="502dp"
         android:layout_above="@id/ll2"
         android:layout_below="@+id/ll1"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="-7dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="-31dp"
         android:padding="@dimen/_10sdp" />
 
     <LinearLayout
@@ -65,7 +74,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_7sdp"
             android:layout_weight="1"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="@dimen/_25sdp">
 
             <EditText
@@ -86,7 +95,7 @@
             android:layout_height="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_5sdp"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/accent_500"
             app:cardCornerRadius="@dimen/_25sdp">
 
             <ImageView

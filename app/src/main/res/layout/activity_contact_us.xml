@@ -10,11 +10,11 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:background="@color/basic"
+        android:layout_height="250dp"
+        android:background="@drawable/image_2"
         android:orientation="vertical"
         android:paddingLeft="30dp"
-        android:paddingTop="20dp"
+        android:paddingTop="50dp"
         android:paddingRight="0dp"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:theme="@style/Theme.AppCompat"
@@ -26,20 +26,13 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:contentDescription="@string/nav_header_desc"
-            android:paddingTop="0dp"
-            app:srcCompat="@drawable/circle1" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:paddingTop="8dp"
             android:paddingLeft="8dp"
+            android:paddingTop="8dp"
             android:text="Medi Consult"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/white"
@@ -90,10 +83,10 @@
         android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.336" />
 
     <ImageView
         android:id="@+id/final_call"
@@ -103,10 +96,10 @@
         android:paddingTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527"
+        app:layout_constraintVertical_bias="0.339"
         app:srcCompat="@drawable/call_basic"
         tools:ignore="MissingConstraints" />
 
@@ -120,10 +113,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.417" />
 
     <TextView
         android:id="@+id/map_cs"
@@ -136,10 +129,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintHorizontal_bias="0.399"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <ImageView
         android:id="@+id/final_mail"
@@ -151,10 +144,10 @@
         android:paddingTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61"
+        app:layout_constraintVertical_bias="0.423"
         app:srcCompat="@drawable/mail_basic"
         tools:ignore="MissingConstraints" />
 
@@ -168,10 +161,10 @@
         android:paddingTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691"
+        app:layout_constraintVertical_bias="0.494"
         app:srcCompat="@drawable/map_basic"
         tools:ignore="MissingConstraints" />
 

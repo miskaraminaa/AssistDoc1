@@ -11,7 +11,7 @@ import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 
-import ma.ensa.www.assistdoc.MedicationListActivity;
+import ma.ensa.www.assistdoc.patient.MedicationListActivity;
 import ma.ensa.www.assistdoc.R;
 
 

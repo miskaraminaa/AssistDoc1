@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AssistDoc1.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AssistDoc1.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AssistDoc1.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AssistDoc1.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AssistDoc1.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AssistDoc1.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tensorflow-lite/AssistDoc1.tensorflow-lite.iml" filepath="$PROJECT_DIR$/.idea/modules/tensorflow-lite/AssistDoc1.tensorflow-lite.iml" />
     </modules>
   </component>
 </project>

@@ -8,19 +8,17 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage" />
-
     <uses-permission android:name="com.androidtutorialpoint.mymapsappsdirection.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
-
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -37,26 +35,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".DoctorProfile"
+            android:name=".patient.Activity_Symptoms"
             android:exported="false"
             android:theme="@style/home_theme" />
-        <activity android:name=".MainActivityMedi" />
         <activity
-            android:name=".ActivityContactUs"
+            android:name=".doctor.DoctorProfile"
+            android:exported="false"
+            android:theme="@style/home_theme" />
+        <activity android:name=".patient.MainActivityMedi" />
+        <activity
+            android:name=".patient.ActivityContactUs"
             android:theme="@style/contact_us_theme" />
-
-        <activity android:name=".MedicationListActivity" />
+        <activity android:name=".patient.MedicationListActivity" />
 
         <receiver
             android:name=".model.MedicationReminderReceiver"
             android:exported="true" />
 
         <activity
-            android:name=".ActivityDisease"
+            android:name=".patient.ActivityDisease"
             android:theme="@style/disease_theme" />
-        <activity
-            android:name=".Activity_Symptoms"
-            android:theme="@style/home_theme" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -70,17 +68,15 @@
             android:theme="@style/standardtheme" />
         <activity
             android:name=".AskRole"
+            android:theme="@style/home_theme" />
+        <activity
+            android:name=".doctor.SignIn_Doctor"
             android:theme="@style/standardtheme" />
         <activity
-            android:name=".SignIn_Doctor"
-            android:theme="@style/standardtheme" />
+            android:name=".doctor.Doctors"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
-            android:name=".Doctors"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity
-            android:name=".Doctors_Update_Profile"
+            android:name=".doctor.Doctors_Update_Profile"
             android:theme="@style/standardtheme" />
         <activity
             android:name=".Activity_SignUp"
@@ -89,17 +85,14 @@
             android:name=".Activity_SignIn"
             android:theme="@style/standardtheme" />
         <activity
-            android:name=".call"
+            android:name=".patient.call"
             android:theme="@style/standardtheme" />
         <activity
-            android:name=".MainActivityPatient"
+            android:name=".patient.MainActivityPatient"
             android:theme="@style/home_theme" />
-
-
         <activity
             android:name=".Chat_Activity"
             android:theme="@style/home_theme" />
-
         <activity
             android:name=".Activity_Setting"
             android:theme="@style/home_theme" />

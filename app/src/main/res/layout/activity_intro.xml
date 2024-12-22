@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IntroActivity"
-    android:background="#ffffff"
+    android:background="@color/purple"
     >
+
+    <ImageView
+        android:id="@+id/imageVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_halo" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/screen_viewpager"
@@ -25,7 +33,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="16dp"
-        android:background="#E91E63"
+        android:background="#FFFFFF"
         android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
         android:drawableTint="@color/white"
         android:text="Next"
@@ -60,7 +68,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="64dp"
-        android:background="@drawable/btn_gradient_style"
+        android:background="@color/white"
         android:text="Get"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +78,7 @@
     <TextView
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="#E91E63"
+        android:textColor="#FFFFFF"
         android:id="@+id/tv_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

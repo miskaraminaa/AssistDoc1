@@ -14,10 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
+import ma.ensa.www.assistdoc.doctor.SignIn_Doctor;
+
 
 public class AskRole extends AppCompatActivity {
 
-    private ImageView doctorButton, patientButton;
     private TextView doctorview, patientview;
     public int n;
 
@@ -25,33 +26,16 @@ public class AskRole extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ask_role);
-        doctorButton = findViewById(R.id.doctorLogin);
-        patientButton = findViewById(R.id.patientLogin);
+
         doctorview = findViewById(R.id.doctortextView);
         patientview = findViewById(R.id.PatienttextView2);
 
-        doctorButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AskRole.this, SignIn_Doctor.class));
-                //checkDoctorSession();
-            }
 
-        });
 
         doctorview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AskRole.this, SignIn_Doctor.class));
-                // checkDoctorSession();
-            }
-        });
-
-        patientButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AskRole.this, Activity_SignIn.class));
-                //checkPatientSession();
             }
         });
 
@@ -59,9 +43,16 @@ public class AskRole extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AskRole.this, Activity_SignIn.class));
-                //checkPatientSession();
             }
         });
+
+        patientview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AskRole.this, Activity_SignIn.class));
+            }
+        });
+
         TextView changeLang = findViewById(R.id.changMyLang);
         changeLang.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,8 +60,8 @@ public class AskRole extends AppCompatActivity {
                 showChangeLanguageDialog();
             }
         });
-
     }
+
     private void showChangeLanguageDialog() {
         final String[] listItems = {"French", "English"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(AskRole.this);
